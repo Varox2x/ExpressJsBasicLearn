@@ -30,7 +30,7 @@ const supermarkets = [
     }
 ]
 
-router.get("",(req,res) => {
+router.get("/",(req,res) => {
     const { miles } = req.query;
     const parsedMiles = parseInt(miles);
     if(!isNaN(parsedMiles)){
